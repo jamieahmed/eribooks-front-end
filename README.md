@@ -13,10 +13,6 @@ EriBooks is .........
 
 ## About Developer/Team
 
-- Wellcome & Thank you for visiting my GitHub.
-- My name is [Jamie Ahmed](https://www.linkedin.com/in/jamie-ahmed-b1841421a/) & I'm Software Engineer with management skills who is passionate about developing full-stack, scalable web applications. I design, develop and maintain fully-fledged websites and applications.
-- If you have any suggestion or comments regarding of my EriBooks please let me know, [linkedin](https://www.linkedin.com/in/jamie-ahmed-b1841421a/) or [Website ]()
-
 ## Technologies Used
 
 [Front-End]()
