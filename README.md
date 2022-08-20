@@ -8,8 +8,8 @@ EriBooks is .........
 
 - [Deployed App]()
 - [Planning Materials](https://trello.com/b/GfqzVCrN/eribooks)
-- [Front-end Repo](https://github.com/jamieahmed/eribooks-back-end)
-- [Back-end Repo](https://github.com/jamieahmed/eribooks-front-end)
+- [Front-end Repo](https://github.com/jamieahmed/eribooks-front-end)
+- [Back-end Repo](https://github.com/jamieahmed/eribooks-back-end)
 
 ## About Developer/Team
 
