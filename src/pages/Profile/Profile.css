@@ -1,0 +1,86 @@
+/* general profile container */
+.profile-container {
+    display: grid;
+    grid-template-areas:
+        'left left main main main main'
+        'footer footer footer footer footer footer';
+    background-color: white;
+    height: auto;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.profile-container>div {
+    font-size: 30px;
+    background-color: white;
+    border-bottom: 3px solid gainsboro;
+}
+
+/* profile image and name of user */
+.profile-pic {
+    grid-area: left;
+
+}
+
+.profile-avator {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.name-of-user {
+    padding: 10px;
+    margin-left: 25%;
+    font-size: large;
+    font-weight: bolder;
+}
+
+/* profile details */
+.profile-details {
+    grid-area: main;
+}
+
+.proile-details-title {
+    color: rgb(241, 13, 13);
+    font-size: 23px;
+    margin: 20px auto;
+}
+
+.profile-details>p>strong {
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+}
+
+.profile-details>p {
+    font-size: medium;
+}
+
+/* profile footer */
+.profile-footer {
+    grid-area: footer;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.edit-profile {
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.profile-footer-details {
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}

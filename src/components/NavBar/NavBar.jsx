@@ -19,7 +19,9 @@ const NavBar = ({ user, handleLogout }) => {
               <Nav className="me-auto">
                 <Nav.Link href="/home">Home</Nav.Link>
                 <Nav.Link href="/books">Books</Nav.Link>
+                <Nav.Link href="/add-books">Add Books</Nav.Link>
                 <Nav.Link href="/add-posts">Add Posts</Nav.Link>
+                <Nav.Link href="/members">Members</Nav.Link>
                 <NavDropdown title="About" id="collasible-nav-dropdown">
                   <NavDropdown.Item href="/about-us">About Us</NavDropdown.Item>
                   <NavDropdown.Item href="/contact-us">
@@ -28,7 +30,7 @@ const NavBar = ({ user, handleLogout }) => {
                 </NavDropdown>
               </Nav>
               <Nav>
-                <Nav.Link href="/profile">Welcome, {user.name}</Nav.Link>
+                <Nav.Link href="/profile">Welcome,{user.name}</Nav.Link>
                 <Nav.Link href="#deets">
                   <Link to="" onClick={handleLogout}>
                     <LogoutIcon />

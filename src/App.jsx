@@ -1,26 +1,30 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import { Routes, Route, useNavigate, Navigate } from "react-router-dom";
+
+//////////////////Components////////////////////////////////////////
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
+
+//////////////////////////////Pages///////////////////////////////
 import Signup from "./pages/Signup/Signup";
 import Login from "./pages/Login/Login";
 import Landing from "./pages/Landing/Landing";
-import Profiles from "./pages/Profiles/Profiles";
+import Members from "./pages/Members/Members";
 import ChangePassword from "./pages/ChangePassword/ChangePassword";
-import * as authService from "./services/authService";
-// service pages
 import AddPosts from "./pages/AddPosts/AddPosts";
-import * as postsService from "./services/PostsService";
 import PostDetails from "./pages/PostDetails/PostDetails";
 import ArticlesDetails from "./pages/ArticlesDetails /ArticlesDetails";
 import BookHome from "./pages/BookStore/Home/BookHome";
 import BookDetails from "./pages/BookStore/BookDetails/BookDetails";
-import Profile from "./pages/UserProfile/Profile";
-import EditProfile from "./pages/UserProfile/EditProfile";
-import Settings from "./pages/UserProfile/Settings";
 import AboutUs from "./pages/About/AboutUs/AboutUs";
 import ContactUs from "./pages/About/ContactUs/ContactUs";
+import Profile from "./pages/Profile/Profile";
+import EditProfile from "./pages/Profile/Edit/EditProfile";
+
+//////////////////////////////services///////////////////////////////
+import * as authService from "./services/authService";
+import * as postsService from "./services/PostsService";
 
 const App = () => {
   const [posts, setPosts] = useState([]);
@@ -65,13 +69,6 @@ const App = () => {
     navigate("/");
   };
 
-  /////////////Add profile detaills staff //////////////
-  const [profileDetails, setprofileDetails] = useState([]);
-
-  const handleAddProfileDetails = (newProfileData) => {
-    setprofileDetails([...profileDetails, newProfileData]);
-  };
-
   return (
     <>
       <NavBar user={user} handleLogout={handleLogout} />
@@ -86,8 +83,8 @@ const App = () => {
           element={<Login handleSignupOrLogin={handleSignupOrLogin} />}
         />
         <Route
-          path="/profiles"
-          element={user ? <Profiles /> : <Navigate to="/login" />}
+          path="/members"
+          element={user ? <Members /> : <Navigate to="/login" />}
         />
         <Route
           path="/changePassword"
@@ -113,19 +110,10 @@ const App = () => {
         />
         <Route path="/books" element={<BookHome user={user} />} />
         <Route path="/book-details" element={<BookDetails user={user} />} />
-        <Route path="/profile" element={<Profile user={user} />} />
-        <Route
-          path="/edit-profile"
-          element={
-            <EditProfile
-              handleAddProfileDetails={handleAddProfileDetails}
-              user={user}
-            />
-          }
-        />
-        <Route path="/profile/settings" element={<Settings user={user} />} />
         <Route path="/about-us" element={<AboutUs user={user} />} />
         <Route path="/contact-us" element={<ContactUs user={user} />} />
+        <Route path="/profile" element={<Profile user={user} />} />
+        <Route path="/profile/edit-profile" element={<EditProfile user={user} />} />
       </Routes>
       <Footer />
     </>
