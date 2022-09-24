@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./PostDetails.module.css";
-import PostCard from "../../components/PostCard/PostCard";
-import { Link } from "react-router-dom";
+import PostCard from "../../../components/Post/PostCard/PostCard";
 
 const PostDetails = (props) => {
   const dogIds = [
@@ -11,15 +10,16 @@ const PostDetails = (props) => {
 
   return (
     <>
+      <div>
+        <h3>search staff will be here</h3>
+      </div>
       <div className={styles.container}>
         {props.posts.map((post) => (
-          <Link to="/article-details" state={{ post }}>
-            <PostCard
-              post={post}
-              key={post._id}
-              randDogImgId={dogIds[Math.floor(Math.random() * dogIds.length)]}
-            />
-          </Link>
+          <PostCard
+            post={post}
+            key={post._id}
+            randDogImgId={dogIds[Math.floor(Math.random() * dogIds.length)]}
+          />
         ))}
       </div>
     </>

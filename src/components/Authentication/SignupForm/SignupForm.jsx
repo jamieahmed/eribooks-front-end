@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./SignupForm.module.css";
-import * as authService from "../../services/authService";
+import * as authService from "../../../services/authService";
 
 const SignupForm = (props) => {
   const navigate = useNavigate();
@@ -100,7 +100,7 @@ const SignupForm = (props) => {
           onChange={handleChange}
         />
       </div>
-      {/* <div className={styles.inputContainer}>
+      <div className={styles.inputContainer}>
         <label htmlFor="photo-upload" className={styles.label}>
           Upload Photo
         </label>
@@ -110,7 +110,7 @@ const SignupForm = (props) => {
           name="photo"
           onChange={handleChangePhoto}
         />
-      </div> */}
+      </div>
       <div className={styles.inputContainer}>
         <button disabled={isFormInvalid()} className={styles.button}>
           Sign Up

@@ -1,10 +1,11 @@
 import React from "react";
-import "./Profile.css";
+import "./Account.css";
 import { Link } from "react-router-dom";
 import SettingsIcon from "@mui/icons-material/Settings";
 import EditIcon from "@mui/icons-material/Edit";
-import ShareIcon from "@mui/icons-material/Share";
-const Profile = ({ user }) => {
+// import ShareIcon from "@mui/icons-material/Share";
+
+const Account = ({ user }) => {
   return (
     <>
       <div className="profile-container">
@@ -36,15 +37,15 @@ const Profile = ({ user }) => {
             <strong>Joined in:</strong> {user.createdAt.toString()}
           </p>
           <hr />
-          <Link className="edit-profile" to="/profile/edit-profile">
-            <EditIcon /> Edit Profile
+          <Link className="edit-profile" to="/profile/add-profile-details">
+            <EditIcon /> Add profile details
           </Link>
           <Link className="edit-profile" to="/profile/settings">
             <SettingsIcon /> Settings
           </Link>
-          <Link className="edit-profile" to="/profile/share">
+          {/* <Link className="edit-profile" to="/profile/share">
             <ShareIcon />
-          </Link>
+          </Link> */}
         </div>
         <div className="profile-footer">
           <p className="profile-footer-details">
@@ -68,4 +69,4 @@ const Profile = ({ user }) => {
   );
 };
 
-export default Profile;
+export default Account;

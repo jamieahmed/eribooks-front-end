@@ -1,18 +1,17 @@
-.container {
+.containerp {
     width: 100%;
     display: grid;
     grid-template-rows: repeat(minmax(170px, 1fr));
     grid-template-columns: auto auto auto auto;
     padding: 25px;
     grid-gap: 10px;
+    background-color: wheat;
 }
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .container {
+    .containerp {
         grid-template-columns: auto;
-        padding: 20px;
+        padding: 30px;
         grid-gap: 5px;
     }
 }
-
