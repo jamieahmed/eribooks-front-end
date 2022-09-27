@@ -3,6 +3,7 @@ import "./PostCard.css";
 import moment from "moment";
 import { Link } from "react-router-dom";
 
+
 const PostCard = ({ post, randDogImgId }) => {
   return (
     <>
@@ -18,7 +19,7 @@ const PostCard = ({ post, randDogImgId }) => {
             className="card-img-top"
           />
           <div className="card-body">
-            <p>Published on: {moment(post.createdAt).fromNow()}</p>
+            <p>{moment(post.createdAt).fromNow()}</p>
             <h2 className="card-text">{post.title}</h2>
             <p>{post.description}</p>
           </div>
