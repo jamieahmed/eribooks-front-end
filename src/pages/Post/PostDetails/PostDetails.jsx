@@ -10,9 +10,6 @@ const PostDetails = (props) => {
 
   return (
     <>
-      <div>
-        <h3>search staff will be here</h3>
-      </div>
       <div className={styles.container}>
         {props.posts.map((post) => (
           <PostCard

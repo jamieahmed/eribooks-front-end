@@ -5,11 +5,19 @@ const Container = styled.div`
   flex: 2;
 `;
 
+const RecommendationTitle = styled.strong`
+  color: red;
+  font-weight: bolder;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+`;
+
 const Recommendation = () => {
   return (
     <Container>
       <div>
-        <span>Recommendation</span>
+        <RecommendationTitle>Recommendation</RecommendationTitle>
       </div>
       Recommendation
     </Container>

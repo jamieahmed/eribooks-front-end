@@ -45,7 +45,12 @@ const NavBar = ({ user, handleLogout }) => {
               <Nav className="me-auto"> </Nav>
               <Nav>
                 <Nav.Link>
-                  <Link to="/login"style={{ textDecoration: "none", color: "inherit" }}>Log In</Link>
+                  <Link
+                    to="/login"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Log In
+                  </Link>
                 </Nav.Link>
                 <Nav.Link href="/about-us">About Us</Nav.Link>
                 <Nav.Link href="/contact-us">Contact Us</Nav.Link>
