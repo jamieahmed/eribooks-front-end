@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
+import Brightness4Icon from "@mui/icons-material/Brightness4";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
@@ -30,7 +30,7 @@ const NavBar = ({ user, handleLogout }) => {
                   </Link>
                 </Nav.Link>
                 <Nav.Link href="">
-                  <DarkModeIcon />
+                  <Brightness4Icon />
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>

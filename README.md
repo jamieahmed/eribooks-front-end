@@ -6,7 +6,7 @@ EriBooks is .........
 
 ## Getting Started:
 
-- [Deployed App]()
+- [Deployed App](https://eribooks.netlify.app/)
 - [Planning Materials](https://trello.com/b/GfqzVCrN/eribooks)
 - [Front-end Repo](https://github.com/jamieahmed/eribooks-front-end)
 - [Back-end Repo](https://github.com/jamieahmed/eribooks-back-end)
